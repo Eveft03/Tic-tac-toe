@@ -1,6 +1,13 @@
+body {
+  background-color: #e4e4e4;
+  font-family: "Permanent Marker", cursive;
+  color: #ec88e7;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   text-align: center;
-  background-color: #e4e4e4;
   padding: 10px 10px;
   display: flex;
   flex-direction: column;
@@ -37,9 +44,9 @@
 }
 
 .winner-cell {
-    background-color: #ec88e7;
-    color: white;
-    transition: all 0.3s ease-in;
+  background-color: #ec88e7;
+  color: white;
+  transition: all 0.3s ease-in;
 }
 
 #reset-button {
@@ -76,4 +83,68 @@
 
 .hide {
   visibility: hidden;
+}
+
+#dark-mode-toggle {
+  padding: 5px;
+  margin: 10px;
+  width: 30px;
+  border-radius: 10px;
+  border: 1px solid #8a6e85;
+}
+
+#dark-mode-toggle:hover {
+  background-color: #ec88e7;
+  color: #000000;
+  border: 1px solid #8a6e85;
+  transform: scale(1.2);
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .cell {
+  border-color: #8a6e85;
+  color: #501e47;
+  background-color: #a0a0a0;
+}
+
+.dark-mode .cell:hover {
+  background-color: #ec88e7;
+}
+.dark-mode .winner-cell {
+  background-color: #ec88e7;
+  transition: all 0.3s ease-in;
+}
+
+.dark-mode #reset-button {
+  background-color: #a0a0a0;
+  color: #501e47;
+  border: 1px solid #8a6e85;
+}
+.dark-mode #reset-button:hover {
+  background-color: #ec88e7;
+  color: #000000;
+}
+
+.dark-mode .msg {
+  color: #ec88e7;
+}
+.dark-mode .container h1 {
+  color: #501e47;
+  background-color: #a0a0a0;
+  border-bottom: 2px solid #8a6e85;
+}
+.dark-mode #dark-mode-toggle {
+  background-color: #a0a0a0;
+  color: #501e47;
+  border: 1px solid #8a6e85;
+}
+
+.dark-mode #dark-mode-toggle:hover {
+  background-color: #ec88e7;
+  border: 1px solid #8a6e85;
+  transform: scale(1.2);
 }

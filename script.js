@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentPlayerX = true; //Player X first
   let reset = document.querySelector("#reset-button");
   let msg = document.querySelector(".msg");
+  let darkModeToggle = document.querySelector("#dark-mode-toggle");
+  darkModeToggle.innerText = "ִֶָ☾";
 
   const winningCombinations = [
     [0, 1, 2],
@@ -91,5 +93,13 @@ document.addEventListener("DOMContentLoaded", function () {
     enableCells();
     currentPlayerX = true;
     msg.classList.add("hide");
+  });
+
+  // Toggle dark mode
+  darkModeToggle.addEventListener("click", function () {
+    let element = document.body;
+    element.classList.toggle("dark-mode");
+    const isDarkMode = element.classList.contains("dark-mode");
+    darkModeToggle.innerText = isDarkMode ? "❂" : "ִֶָ☾";
   });
 });
