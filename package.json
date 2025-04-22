@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Eveft03/Tic-tac-toe#readme",
   "description": "",
   "devDependencies": {
-    "electron": "^35.1.3",
+    "electron": "^35.2.0",
     "electron-builder": "^26.0.12"
   }
 }
