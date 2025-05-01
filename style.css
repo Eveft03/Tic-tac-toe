@@ -139,12 +139,12 @@ button:hover {
   transition: all 0.3s ease-in;
 }
 
-.dark-mode #reset-button {
+.dark-mode .button {
   background-color: #a0a0a0;
   color: #501e47;
   border: 1px solid #8a6e85;
 }
-.dark-mode #reset-button:hover {
+.dark-mode .button:hover {
   background-color: #ec88e7;
   color: #000000;
 }
